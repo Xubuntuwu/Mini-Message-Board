@@ -1,8 +1,113 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: aliceblue;
+  /* background-color: #06283D; */
+  opacity: 1;
+  background-image:  radial-gradient(#1363DF 2px, transparent 2px), radial-gradient(#1363DF 2px, #06283D 2px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
+  color: var(--color-4);
+  --color-1: #06283D;
+  --color-2: #1363DF;
+  --color-3: #47B5FF;
+  --color-4: #DFF6FF;
 }
 
 a {
-  color: #00B7FF;
+  color: inherit;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+li{
+  display: flex;
+}
+
+li:not(:last-child) { 
+  margin-bottom: 1rem;  
+}
+
+form{
+  background-color: var(--color-3);
+  font-size: large;
+  color: var(--color-1);
+
+}
+
+fieldset{
+  border: none;
+}
+
+legend{
+  font-weight: bolder;
+  font-size: large;
+}
+
+textarea{
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+input{
+  border-radius: 10px;
+  line-height: 1.5rem;
+}
+
+textarea, input{
+  border: none;
+  background-color: var(--color-4);
+
+}
+
+div.message{
+  border: solid black 2px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0.5rem;
+  color: var(--color-1);
+  background-color: var(--color-4);
+}
+.name{
+  font-weight: bold;
+  font-size: x-large;
+}
+.added{
+  font-style: italic;
+  color: gray;
+}
+.top-bar{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.text{
+  font-size: large;
+}
+button{
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  color: azure;
+  background-color: var(--color-2);
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  cursor: pointer;
+}
+
+button[type='button'].cancel{
+  background-color: gray;
+}
+
+.button-holder{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
