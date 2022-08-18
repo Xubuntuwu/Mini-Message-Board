@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('new_message', { title: 'Mini Messageboard' });
+  res.render('new_message', { title: 'Mini Space Messageboard' });
 });
 
 module.exports = router;
