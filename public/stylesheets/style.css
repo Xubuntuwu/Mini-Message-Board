@@ -2,7 +2,6 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: aliceblue;
-  /* background-color: #06283D; */
   opacity: 1;
   background-image:  radial-gradient(#1363DF 2px, transparent 2px), radial-gradient(#1363DF 2px, #06283D 2px);
   background-size: 80px 80px;
@@ -83,6 +82,7 @@ div.message{
   font-size: x-large;
 }
 .added{
+  align-self: flex-end;
   font-style: italic;
   color: gray;
 }
