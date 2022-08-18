@@ -2,16 +2,16 @@
 <form method="post" action="/new">
     <fieldset>
         <legend>Post a new message</legend>
-        <ul>
-            <li>
+        {{!-- <ul> --}}
+            <p>
                 <label for="name">Name: </label>
                 <input type="text" id="name" name="name"/>
-            </li>
-            <li>
+            </p>
+            <p>
                 <label for="text">Text: </label>
                 <textarea cols="5" rows="3" id="text" name="text"></textarea>
-            </li>
-        </ul>
+            </p>
+        {{!-- </ul> --}}
         <p class="button-holder">
             <button type="button" class="cancel"><a href="/">Cancel</a></button>
             <button type="submit">Post</button>
